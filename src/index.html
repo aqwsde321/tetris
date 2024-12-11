@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <audio src="./mp3/BGM Tetris Bradinsky.mp3" id="bgm" type="audio/mp3" loop></audio>
+        <h1>Let's play Tetris</h1>
+
+        <div id="game-container">
+            <canvas id="game-board" width="300" height="600"></canvas>
+        </div>
+
+        <div id="controls">
+            <button id="start-button">START</button>
+            <button id="pause-button">PAUSE</button>
+            <button id="mute-button">UNMUTE</button>
+        </div>
+
+    </div>
+
+    <div id="score-board">
+        <div class="score-box">
+            <h3>Score</h3>
+            <div id="score">0</div>
+        </div>
+        <div class="score-box">
+            <h3>Level</h3>
+            <div id="level">1</div>
+        </div>
+        <div class="score-box">
+            <h3>Line Clears</h3>
+            <div id="lines">0</div>
+        </div>
+    </div>
+
+    <script src="tetris.js" type="module"></script>
+</body>
+
+</html>
